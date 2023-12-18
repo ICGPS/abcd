@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="538de0a0-2b34-4950-b0f4-e8dc3b4d0168" name="Changes" comment="commit, push 연습">
+    <list default="true" id="538de0a0-2b34-4950-b0f4-e8dc3b4d0168" name="Changes" comment="git 연동..">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1주차.md" beforeDir="false" afterPath="$PROJECT_DIR$/1주차.md" afterDir="false" />
     </list>
@@ -57,7 +57,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702875516774</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="git 연동..">
+      <option name="closed" value="true" />
+      <created>1702884467836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702884467836</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit, push 연습" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit, push 연습" />
+    <MESSAGE value="git 연동.." />
+    <option name="LAST_COMMIT_MESSAGE" value="git 연동.." />
   </component>
 </project>
