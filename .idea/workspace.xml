@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="538de0a0-2b34-4950-b0f4-e8dc3b4d0168" name="Changes" comment="수정.. 제발..">
+    <list default="true" id="538de0a0-2b34-4950-b0f4-e8dc3b4d0168" name="Changes" comment="수정.. 제발.. 제발..!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1주차.md" beforeDir="false" afterPath="$PROJECT_DIR$/1주차.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702885436352</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="수정.. 제발.. 제발..!!">
+      <option name="closed" value="true" />
+      <created>1702885775721</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702885775721</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +126,7 @@
     <MESSAGE value="commit, push 연습" />
     <MESSAGE value="git 연동.." />
     <MESSAGE value="수정.. 제발.." />
-    <option name="LAST_COMMIT_MESSAGE" value="수정.. 제발.." />
+    <MESSAGE value="수정.. 제발.. 제발..!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="수정.. 제발.. 제발..!!" />
   </component>
 </project>
