@@ -56,49 +56,46 @@ public class MvcConfig implements WebMvcConfigurer {
    
     **src/main/webapp/WEB-INF/web.xml**
     
-    ```xml
+       ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <web-app version="4.0" xmlns="<http://xmlns.jcp.org/xml/ns/javaee>" xmlns:xsi="<http://www.w3.org/2001/XMLSchema-instance>" xsi:schemaLocation="<http://xmlns.jcp.org/xml/ns/javaee>                       <http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd>">
         <servlet>
-    				<!-- DispatcherServlet을 dispatcher라는 이름으로 등록한다. -->
+    		<!-- DispatcherServlet을 dispatcher라는 이름으로 등록한다. -->
             <servlet-name>dispatcher</servlet-name>
             <servlet-class>
                 org.springframework.web.servlet.DispatcherServlet
             </servlet-class>
             <init-param>
-    						<!-- contextClass 초기화 파라미터를 설정한다. 
-    						자바 설정을 사용하는 경우 AnnotationConfigWebApplicationContext 클래스를
-    					  사용한다. 이 클래스는 자바 설정을 이용하는데 웹 어플리케이션 용 
-    						스프링 컨테이너 클래스이다. -->
+    			<!-- contextClass 초기화 파라미터를 설정한다. 
+    			자바 설정을 사용하는 경우 AnnotationConfigWebApplicationContext 클래스를 사용한다. 
+    			이 클래스는 자바 설정을 이용하는데 웹 어플리케이션 용 스프링 컨테이너 클래스이다. -->
                 <param-name>contextClass</param-name>
                 <param-value>
                     org.springframework.web.context.support.AnnotationConfigWebApplicationContext
                 </param-value>
             </init-param>
             <init-param>
-    						<!-- contextConfigLocation 초기화 파라미터값을 지정한다.
-    							이 파라미터에는 스프링 설정 클래스 목록을 지정한다.
-    							각 설정 파일의 경로는 줄바꿈이나 콤마로 구분한다. -->
+				<!-- contextConfigLocation 초기화 파라미터값을 지정한다.
+	    		이 파라미터에는 스프링 설정 클래스 목록을 지정한다.
+	    		각 설정 파일의 경로는 줄바꿈이나 콤마로 구분한다. -->
                 <param-name>contextConfigLocation</param-name>
                 <param-value>
                     config.MvcConfig
                     config.ControllerConfig
                 </param-value>
             </init-param>
-    				<!-- 톰캣과 같은 컨테이너가 웹 어플리케이션을 구동할 때
-    						이 서블릿을 함께 실행하도록 설정한다. -->
+    		<!-- 톰캣과 같은 컨테이너가 웹 어플리케이션을 구동할 때 이 서블릿을 함께 실행하도록 설정한다. -->
             <load-on-startup>1</load-on-startup>
         </servlet>
         
-    		<!-- 모든 요청을 DispatcherServlet이 처리하도록 서블릿 매핑을 설정했다. -->
+    	<!-- 모든 요청을 DispatcherServlet이 처리하도록 서블릿 매핑을 설정했다. -->
         <servlet-mapping>
             <servlet-name>dispatcher</servlet-name>
             <url-pattern>/</url-pattern>
         </servlet-mapping>
         <!-- HTTP 요청 파라미터의 인코딩 처리를 위한 서블릿 필터를 등록한다.
-    				스프링은 인코딩 처리를 위한 필터인 CharacterEncodingFilter 클래스를 제공한다.
-    				encoding 초기화 파라미터를 설정해서 HTTP 요청 파라미터를 읽어올 때
-    				사용할 인코딩을 지정한다. -->
+    	스프링은 인코딩 처리를 위한 필터인 CharacterEncodingFilter 클래스를 제공한다.
+    	encoding 초기화 파라미터를 설정해서 HTTP 요청 파라미터를 읽어올 때 사용할 인코딩을 지정한다. -->
         <filter>
             <filter-name>encodingFilter</filter-name>
             <filter-class>
